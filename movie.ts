@@ -8,7 +8,7 @@ export class Movie {
     public director: Professional;
     public writer: Professional;
     public language: string;
-    public plataforma: string;
+    public plataforma: string; 
     public isMCU: boolean;
     public mainCharacterName: string;
     public producer: string;
@@ -18,42 +18,10 @@ export class Movie {
     constructor(title: string, releaseYear: number, nacionality: string, genre:string){
         this.title = title;
         this.releaseYear = releaseYear;
-        this.actors
         this.nacionality = nacionality;
-        this.director 
-        this.writer
-        this.language
-        this.plataforma
-        this.isMCU 
-        this.mainCharacterName
-        this.producer
-        this.distributor
         this.genre = genre;
     }
-    theDirect(Professional){
-        this.director = Professional;
-    }
-    theWriter(Professional){
-        this.writer = Professional;
-    }
-    theLanguage(lenguage:string){
-        this.language = lenguage;
-    }
-    thePlataforma(plataforma:string){
-        this.plataforma = plataforma;
-    }
-    theIsMCU(isMUC:boolean){
-        this.isMCU = isMUC;
-    }
-    theMainCharacterName(mainCharacterName:string){
-        this.mainCharacterName = mainCharacterName;
-    }
-    theProducer(producer:string){
-        this.producer = producer;
-    }
-    theDistributor(distributor:string){
-        this.distributor = distributor;
-    }
+
     public toStringMovie(): string{
         let newToStringMovie =
            `title:  ${this.title}
@@ -71,4 +39,6 @@ export class Movie {
             genre: ${this.genre}`
         return newToStringMovie
     }
+
+    
 }
