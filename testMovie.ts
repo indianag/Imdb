@@ -16,8 +16,7 @@ theMovie.isMCU = false;
 theMovie.mainCharacterName = "Edgar Ramirez"
 theMovie.producer = "Juan Pablito"
 theMovie.distributor = "Tricolor"
-
 console.log(theMovie.toStringMovie());
 
 
- 
+
